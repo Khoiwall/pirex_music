@@ -25,7 +25,7 @@ export default function ControlSound() {
       <Tooltip title={sound == 0 ? "Cancel mute" : "Mute"}>
         <Button
           onClick={() => setSound(sound == 0 ? 50 : 0)}
-          variant="transparent-button"
+          variant="Transparent"
           className="!p-0"
         >
           <Icon className="[&_path]:!fill-white/70 [&_path]:hover:!fill-white">

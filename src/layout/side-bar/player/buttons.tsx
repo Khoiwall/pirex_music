@@ -18,7 +18,7 @@ interface ButtonPlayer extends ButtonProps {
 function ButtonPlayer({ children, sizeIcon = "sm" }: ButtonPlayer) {
   return (
     <Button
-      variant="transparent-button"
+      variant="Transparent"
       className="[&_path]:!fill-white/70 [&_path]:hover:!fill-white"
       size={0}
     >
