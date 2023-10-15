@@ -1,4 +1,4 @@
-import { PText } from "@/components/ui/text";
+import { PText } from "@/components/ui/p-text";
 import Link from "next/link";
 import Buttons from "./buttons";
 import ProgressBar from "./process-bar";

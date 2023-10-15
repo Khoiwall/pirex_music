@@ -1,7 +1,7 @@
 "use client";
 
 import Icon from "@/components/ui/icon";
-import { PText } from "@/components/ui/text";
+import { PText } from "@/components/ui/p-text";
 import { SidebarContext } from "@/context/SidebarContext";
 import { cn } from "@/utils";
 import Link from "next/link";
