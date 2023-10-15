@@ -54,5 +54,5 @@ const PText = React.forwardRef<HTMLButtonElement, TextProps>(
     );
   }
 );
-
+PText.displayName = "PText";
 export { PText, textVariants };
