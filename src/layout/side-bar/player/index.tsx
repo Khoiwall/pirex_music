@@ -60,7 +60,7 @@ export default function Player() {
         <div className="flex items-center gap-4">
           <Tooltip title="Save to library">
             <Button
-              variant="transparent"
+              variant="transparent-button"
               className="!p-0 [&_path]:!fill-white/70 [&_path]:hover:!fill-white"
             >
               <Icon>
@@ -70,7 +70,7 @@ export default function Player() {
           </Tooltip>
           <Tooltip title="Playlist">
             <Button
-              variant="transparent"
+              variant="transparent-button"
               className="!p-0 [&_path]:!fill-white/70 [&_path]:hover:!fill-white"
             >
               <Icon>
