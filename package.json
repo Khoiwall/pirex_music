@@ -1,0 +1,36 @@
+{
+  "name": "music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.13",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "axios": "^0.27.2",
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^1.13.2",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
