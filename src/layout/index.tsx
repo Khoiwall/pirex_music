@@ -13,7 +13,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           <MusicProvider>
             <TopNavigation />
             <SideBar />
-            <main className="mt-[72px]">{children}</main>
+            <main className="mt-[72px] ml-[279px] text-white">
+              <div className="max-w-[1536px] 2xl:mx-auto lg:mx-8 md:mx-6 mx-4 pt-[30px]">
+                {children}
+              </div>
+            </main>
           </MusicProvider>
         </SidebarProvider>
       </body>

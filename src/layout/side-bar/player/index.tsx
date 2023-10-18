@@ -17,6 +17,7 @@ export default function Player() {
   const { music, player } = useContext(MusicContext);
   useEffect(() => {
     if (player) {
+      player.loop = true;
       player.ontimeupdate = function () {
         setCurrentTime(secondsToTimeFormat(player.currentTime || 0));
         setProcess(player.currentTime / 391);

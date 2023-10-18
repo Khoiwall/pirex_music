@@ -74,6 +74,9 @@ const config: Config = {
         header: ["Poppins", "sans-serif"],
         default: ["Inter"],
       },
+      screens: {
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
