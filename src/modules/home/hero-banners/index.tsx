@@ -65,7 +65,7 @@ export default function HeroBanners() {
             <p className="text-body-16 text-white/70 font-meidum line-clamp-3 max-w-[70%] mt-4">
               There are many variations of passages of Lorem Ipsum available, but the
               majority have suffered alteration in some form, by injected humour, or
-              randomised words which don't look even slightly believable
+              randomised words which dont look even slightly believable
             </p>
             <div className="flex">
               <Button
@@ -95,7 +95,7 @@ export default function HeroBanners() {
             <p className="text-body-16 text-white/70 font-meidum line-clamp-3 max-w-[70%] mt-4">
               There are many variations of passages of Lorem Ipsum available, but the
               majority have suffered alteration in some form, by injected humour, or
-              randomised words which don't look even slightly believable
+              randomised words which dont look even slightly believable
             </p>
             <div className="flex">
               <Button
