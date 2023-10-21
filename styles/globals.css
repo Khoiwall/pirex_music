@@ -36,3 +36,24 @@ input[type="range"]::-moz-range-thumb {
   border: none;
   transition: 0.2s ease-in-out;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #110b14;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  opacity: 0 !important;
+}

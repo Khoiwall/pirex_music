@@ -22,19 +22,35 @@ type Props = {
   children: ReactNode;
 };
 
-let player: HTMLAudioElement | null = null;
+const song = {
+  avatar: "https://i.ytimg.com/vi/H0XyNfZj5Xs/maxresdefault.jpg",
+  url: "https://res.cloudinary.com/dvvgyeong/video/upload/v1/Music/ij9rf7auvfl8aviwbfun",
+  name: "Wildest Dreams",
+  singers: [
+    {
+      id: "123",
+      name: "Taylor Swift",
+    },
+  ],
+  durations: 391,
+};
 
 export function MusicProvider({ children }: Props) {
-  const [music, setMusic] = useState<any>(null);
+  const [music, setMusic] = useState<{
+    avatar: string;
+    url: string;
+    name: string;
+    singers: {
+      id: string;
+      name: string;
+    }[];
+    durations: number;
+  }>(song);
   const [isPlay, setIsPlay] = useState<boolean>(false);
   const [player, setPlayer] = useState<null | HTMLAudioElement>(null);
   useEffect(() => {
     if (typeof Audio !== "undefined") {
-      setPlayer(
-        new Audio(
-          "https://res.cloudinary.com/dvvgyeong/video/upload/v1/Music/ij9rf7auvfl8aviwbfun"
-        )
-      );
+      setPlayer(new Audio(song?.url));
     } else {
       console.log("Audio API not supported");
     }

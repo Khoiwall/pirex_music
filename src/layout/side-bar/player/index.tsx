@@ -9,7 +9,7 @@ import Icon from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
 import { HeartIcon, ListIcon } from "@/components/icons";
 import { MusicContext } from "@/context/music-context";
-import { secondsToTimeFormat } from "@/helpers";
+import { secondsToTimeFormat } from "@/utils";
 
 export default function Player() {
   const [process, setProcess] = useState<number>(0);
@@ -20,34 +20,38 @@ export default function Player() {
       player.loop = true;
       player.ontimeupdate = function () {
         setCurrentTime(secondsToTimeFormat(player.currentTime || 0));
-        setProcess(player.currentTime / 391);
+        setProcess(player.currentTime / music?.durations);
       };
     }
   }, [music, player]);
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log(e?.target?.value);
     if (player) {
       setProcess(parseFloat(e?.target?.value));
-      player.currentTime = parseFloat(e?.target?.value) * 391;
+      player.currentTime = parseFloat(e?.target?.value) * music?.durations;
     }
   };
   return (
     <div className="py-5 px-[30px] text-white">
       <figure className="relative min-h-[90px] max-h-[90px] min-w-[90px] max-w-[90px] rounded-lg overflow-hidden mx-auto mb-2.5">
         <img
-          src="http://volna.volkovdesign.com/img/covers/cover4.jpg"
+          src={music?.avatar}
           alt="song"
-          className="absolute top-0 left-0 w-full h-full"
+          className="absolute top-0 left-0 w-full h-full object-cover"
         />
       </figure>
-      <div className="flex items-center gap-1 text-center justify-center mb-2.5">
-        <PText variant="medium">Love Story</PText>
-        <span>-</span>
-        <Link href="/">
-          <PText variant="medium" className="text-white/70 hover:text-white">
-            Taylor Swift
-          </PText>
-        </Link>
+      <div className="flex flex-col text-center gap-1 mb-2.5">
+        <PText variant="medium" className="line-clamp-1">
+          {music?.name}
+        </PText>
+        <div className="line-clamp-1 flex justify-center">
+          {music?.singers?.map((singer: any, i: number) => (
+            <Link key={i} href={`/singers/${singer?.name}`}>
+              <PText variant="medium" className="text-white/70 hover:text-white">
+                {i > 0 && ", "} {singer?.name}
+              </PText>
+            </Link>
+          ))}
+        </div>
       </div>
       <Buttons />
       <div className="flex gap-2 mt-2.5 items-center">
