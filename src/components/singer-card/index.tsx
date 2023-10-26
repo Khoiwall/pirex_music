@@ -5,7 +5,7 @@ import { HeartBackgroundIcon, HeartIcon } from "../icons";
 
 export default function SingerCard() {
   return (
-    <div className="w-full h-full bg-base-shade-01-dp hover:bg-base-shade-02-dp p-4 rounded-lg relative">
+    <div className="w-full h-full bg-base-shade-01-dp hover:bg-base-shade-02-dp p-4 rounded-lg relative [&_button]:hover:inline-flex">
       <figure
         className="relative pt-[100%] mb-4 rounded-full"
         style={{
@@ -19,7 +19,7 @@ export default function SingerCard() {
         />
         <Button
           variant="secondary"
-          className="p-3 rounded-full absolute right-1 bottom-1 z-30 [&_path]:opacity-70 [&_path]:hover:opacity-100 [&_path]:hover:fill-primary"
+          className="p-3 rounded-full absolute right-1 bottom-1 z-30 [&_path]:opacity-70 [&_path]:hover:opacity-100 [&_path]:hover:fill-primary hidden"
         >
           <Icon size="lg">
             <HeartBackgroundIcon />

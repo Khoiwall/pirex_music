@@ -68,6 +68,8 @@ const config: Config = {
         "body-14": ["14px", "22px"],
         "body-13": ["13px", "21px"],
         "body-12": ["12px", "20px"],
+        "body-11": ["11px", "19px"],
+        "body-10": ["10px", "18px"],
         button: ["14px", "22px"],
       },
       fontFamily: {

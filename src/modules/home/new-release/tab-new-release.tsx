@@ -20,7 +20,7 @@ export default function TabNewRelease({ setTab, tab }: Props) {
           >
             <p
               className={clsx("text-white font-medium", {
-                "text-base-shade-00-dp": tab == i,
+                "!text-base-shade-00-dp": tab == i,
               })}
             >
               {_tab}

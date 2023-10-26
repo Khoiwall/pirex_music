@@ -34,3 +34,68 @@ export function HeartBackgroundIcon() {
     </svg>
   );
 }
+export function ThreeDotIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.0002 10.8332C10.4604 10.8332 10.8335 10.4601 10.8335 9.99984C10.8335 9.5396 10.4604 9.1665 10.0002 9.1665C9.53993 9.1665 9.16683 9.5396 9.16683 9.99984C9.16683 10.4601 9.53993 10.8332 10.0002 10.8332Z"
+        stroke="white"
+        strokeWidth="1.77813"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.8335 10.8332C16.2937 10.8332 16.6668 10.4601 16.6668 9.99984C16.6668 9.5396 16.2937 9.1665 15.8335 9.1665C15.3733 9.1665 15.0002 9.5396 15.0002 9.99984C15.0002 10.4601 15.3733 10.8332 15.8335 10.8332Z"
+        stroke="white"
+        strokeWidth="1.77813"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4.16683 10.8332C4.62707 10.8332 5.00016 10.4601 5.00016 9.99984C5.00016 9.5396 4.62707 9.1665 4.16683 9.1665C3.70659 9.1665 3.3335 9.5396 3.3335 9.99984C3.3335 10.4601 3.70659 10.8332 4.16683 10.8332Z"
+        stroke="white"
+        strokeWidth="1.77813"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+export function PlusCircleIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16">
+      <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+      <path d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75z"></path>
+    </svg>
+  );
+}
+export function ShareIcon() {
+  return (
+    <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16">
+      <path d="M1 5.75A.75.75 0 0 1 1.75 5H4v1.5H2.5v8h11v-8H12V5h2.25a.75.75 0 0 1 .75.75v9.5a.75.75 0 0 1-.75.75H1.75a.75.75 0 0 1-.75-.75v-9.5z"></path>
+      <path d="M8 9.576a.75.75 0 0 0 .75-.75V2.903l1.454 1.454a.75.75 0 0 0 1.06-1.06L8 .03 4.735 3.296a.75.75 0 0 0 1.06 1.061L7.25 2.903v5.923c0 .414.336.75.75.75z"></path>
+    </svg>
+  );
+}
+export function ChevronRightIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.0942 10L8.08507 4.9917L6.90674 6.17003L10.7401 10.0034L6.90674 13.8309L8.08507 15.0092L13.0942 10Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
